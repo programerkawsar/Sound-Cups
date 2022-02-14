@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--All Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Website Title-->
+    <title>Sound Cups | Mix different sounds and create your perfect environment.</title>
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--jQuery UI CSS-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!--Default Styling-->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!--Right Fixed sound Icon-->
+    <div class="fixed-icon">
+        <div id="soundOffOn"><img src="img/speaker.svg" alt="sound Icon"></div>
+    </div>
+    <!--Header-->
+    <header class="header">
+        <!--Header Logo-->
+        <img src="img/logo.png" alt="Website Logo">
+        <!--Header Head Text-->
+        <h1>Sound Cups</h1>
+        <!--Header contents-->
+        <p>Mix different sounds and create your perfect environment. <br> It is a long established fact that a reader will be distracted by the readable content.</p>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Section Head text-->
+        <h3 class="title-text">Weather</h3>
+        <!--Grid-->
+        <ul class="grid">
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Rain Sound" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/rain.svg" alt="Rain" class="big-icon" id="btn1" title="Rain">
+                <!--Volume Slider-->         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider1"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound1" loop style="display: none;">
+                    <source src="sounds/weather/rain.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Storm Sound" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/storms.svg" alt="Storms" class="big-icon" id="btn2" title="Storm">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider2"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound2" loop style="display: none;">
+                    <source src="sounds/weather/storm.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/sunny.svg" alt="Sunny" class="big-icon" id="btn3" title="Sunny">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider3"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound3" loop style="display: none;">
+                    <source src="sounds/weather/sunny.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/sunset.svg" alt="Sunset" class="big-icon" id="btn4" title="Sunset">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider4"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound4" loop style="display: none;">
+                    <source src="sounds/weather/sunset.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/hazy.svg" alt="Sea Side" class="big-icon" id="btn5" title="Sea Side">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider5"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound5" loop style="display: none;">
+                    <source src="sounds/weather/seaside.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/snows.svg" alt="Snows" class="big-icon" id="btn6" title="Snows">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider6"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound6" loop style="display: none;">
+                    <source src="sounds/weather/snows.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/rain-storms.svg" alt="Rain & Storm" class="big-icon" id="btn7" title="Rain & Storm">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider7"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound7" loop style="display: none;">
+                    <source src="sounds/weather/rain-storm.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/wind.svg" alt="Wind" class="big-icon" id="btn8" title="Wind">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider8"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound8" loop style="display: none;">
+                    <source src="sounds/weather/wind.mp3" type="audio/mp3" />
+                </audio>
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/weather/moon.svg" alt="Moon" class="big-icon" id="btn9" title="Moon">
+                <!--Volume Slider--> 
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider9"></div>
+                </div>
+                <!--Audio Element-->
+                <audio id="sound9" loop style="display: none;">
+                    <source src="sounds/weather/moon.mp3" type="audio/mp3" />
+                </audio>
+            </li>
+        </ul>
+    </main>
+    <!--Main-->
+    <main>
+        <!--Section Head text-->
+        <h3 class="title-text">Natural</h3>
+        <!--Grid-->
+        <ul class="grid">
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/natural/fire.svg" alt="Fire" class="big-icon" id="btn10" title="Fire">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider10"></div>
+                </div>
+                <audio id="sound10" loop style="display: none;">
+                    <source src="sounds/natural/fire.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/natural/coffee-cup.svg" alt="Noise" class="big-icon" id="btn11" title="Noise">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider11"></div>
+                </div>
+                <audio id="sound11" loop style="display: none;">
+                    <source src="sounds/natural/noise.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <!--Big Icon-->
+                <img src="img/icons/natural/garden.svg" alt="Garden" class="big-icon" id="btn12" title="Garden">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider12"></div>
+                </div>
+                <audio id="sound12" loop style="display: none;">
+                    <source src="sounds/natural/garden.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+        </ul>
+    </main>
+    <!--Main-->
+    <main>
+        <!--Section Head text-->
+        <h3 class="title-text">Vehicles</h3>
+        <!--Grid-->
+        <ul class="grid">
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/bike.svg" alt="Bicycle" class="big-icon" id="btn13" title="Bicycle">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider13"></div>
+                </div>
+                <audio id="sound13" loop style="display: none;">
+                    <source src="sounds/vehicles/bicycle.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/boat.svg" alt="Boat" class="big-icon" id="btn14" title="Boat">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider14"></div>
+                </div>
+                <audio id="sound14" loop style="display: none;">
+                    <source src="sounds/vehicles/boat.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/plane.svg" alt="Plane" class="big-icon" id="btn15" title="Plane">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider15"></div>
+                </div>
+                <audio id="sound15" loop style="display: none;">
+                    <source src="sounds/vehicles/airplane.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/rocket.svg" alt="Rocket" class="big-icon" id="btn16" title="Rocket">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider16"></div>
+                </div>
+                <audio id="sound16" loop style="display: none;">
+                    <source src="sounds/vehicles/rocket.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/steering-wheel.svg" alt="Horn" class="big-icon" id="btn17" title="Horn">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider17"></div>
+                </div>
+                <audio id="sound17" loop style="display: none;">
+                    <source src="sounds/vehicles/horn.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/train.svg" alt="Train" class="big-icon" id="btn18" title="Train">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider18"></div>
+                </div>
+                <audio id="sound18" loop style="display: none;">
+                    <source src="sounds/vehicles/train.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/vehicles/helicopter.svg" alt="Helicopter" class="big-icon" id="btn19" title="Helicopter">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider19"></div>
+                </div>
+                <audio id="sound19" loop style="display: none;">
+                    <source src="sounds/vehicles/helicopter.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+        </ul>
+    </main>
+    <!--Main-->
+    <main>
+        <!--Section Head text-->
+        <h3 class="title-text">Animals</h3>
+        <!--Grid-->
+        <ul class="grid">
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/cat.svg" alt="Cat" class="big-icon" id="btn20" title="Cat">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider20"></div>
+                </div>
+                <audio id="sound20" loop style="display: none;">
+                    <source src="sounds/animals/cat.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/chicken.svg" alt="Chicken" class="big-icon" id="btn21" title="Chicken">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider21"></div>
+                </div>
+                <audio id="sound21" loop style="display: none;">
+                    <source src="sounds/animals/chicken.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/cow.svg" alt="Cow" class="big-icon" id="btn22" title="Cow">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider22"></div>
+                </div>
+                <audio id="sound22" loop style="display: none;">
+                    <source src="sounds/animals/cow.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/dog.svg" alt="Dog" class="big-icon" id="btn23" title="Dog">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider23"></div>
+                </div>
+                <audio id="sound23" loop style="display: none;">
+                    <source src="sounds/animals/dog.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/duckling.svg" alt="Duck" class="big-icon" id="btn24" title="Duck">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider24"></div>
+                </div>
+                <audio id="sound24" loop style="display: none;">
+                    <source src="sounds/animals/duck.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/animals/horse.svg" alt="Horse" class="big-icon" id="btn25" title="Horse">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider25"></div>
+                </div>
+                <audio id="sound25" loop style="display: none;">
+                    <source src="sounds/animals/horse.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+        </ul>
+    </main>
+    <!--Main-->
+    <main>
+        <!--Section Head text-->
+        <h3 class="title-text">Other</h3>
+        <!--Grid-->
+        <ul class="grid">
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/other/clock.svg" alt="Clock" class="big-icon" id="btn26" title="Clock">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider26"></div>
+                </div>
+                <audio id="sound26" loop style="display: none;">
+                    <source src="sounds/other/clock.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/other/fan.svg" alt="Fan" class="big-icon" id="btn27" title="Fan">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider27"></div>
+                </div>
+                <audio id="sound27" loop style="display: none;">
+                    <source src="sounds/other/fan.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+            <li>
+                <div tabindex="0" class="information" data-toggle="popover" data-placement="top" data-trigger="focus" title="Sound Name" data-content="It is a long established fact that a reader will be distracted by the readable content.">
+                    <!--Information Icon-->
+                    <img src="img/information.svg" alt="information">
+                </div>
+                <img src="img/icons/other/megaphone.svg" alt="Megaphone" class="big-icon" id="btn28" title="Megaphone">         
+                <div class="volume-slider" style="display: none;">
+                    <div class="volume-slider-input" id="slider28"></div>
+                </div>
+                <audio id="sound28" loop style="display: none;">
+                    <source src="sounds/other/megaphone.mp3" type="audio/mp3" />
+                </audio> 
+            </li>
+        </ul>
+    </main>
+    <!--Footer-->
+    <footer>
+        <p><img src="img/copyright.svg" alt="Copyright Icon"> 2019 - All rights reserved by <a href="#">kawsar</a></p>
+    </footer>
+
+    <!--jQuery Script-->
+    <script src="js/jquery.min.js"></script>
+    <!--jQuery UI Script-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--Popper Script-->
+    <script src="js/popper.min.js"></script>
+    <!--Bootstrap Script-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Main Scripts-->
+    <script src="js/main.min.js"></script>
+</body>
+</html>
